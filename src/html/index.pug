@@ -1,0 +1,111 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title bookshop
+    link(rel='stylesheet', type='text/css', href='output/main.css')
+  body
+    header.header
+      .header__container
+        a.header__logo(href='#')
+          img(src='src/img/icons/Logo.svg', alt='logo')
+        nav
+          ul.header__menu
+            li
+              a.header__menu-item.header-books(href='#') BOOKS
+            li
+              a.header__menu-item(href='#') AUDIOBOOKS
+            li
+              a.header__menu-item(href='#') STATIONERY & GIFTS
+            li
+              a.header__menu-item(href='#') BLOG
+        .header__icons
+          button.header__icons-user
+            img(src='src/img/icons/user.svg', alt='user-icon')
+          button.header__icons-search
+            img(src='src/img/icons/search.svg', alt='search-icon')
+          button#chart.header__icons-bag
+            img(src='src/img/icons/shop-bag.svg', alt='bag-icon')
+            .numb
+    main
+      section.slider.container
+        .slider__images
+        .slider__links
+          .slider__promo-1
+            a(href='')
+              p
+                | CHANGE 
+                br
+                | OLD BOOK 
+                br
+                | ON NEW
+              img.slider__promo-arrow(src='src/img/icons/arrow.svg', alt='arrow')
+          .slider__promo-2
+            a(href='')
+              p
+                | TOP
+                br
+                | 100
+                br
+                | BOOKS
+                br
+                | 2022
+              img.slider__promo-arrow(src='src/img/icons/arrow.svg', alt='arrow')
+      section.gallery-cards.container
+        nav.gallery-cards__categories
+          ul
+            li.gallery-cards__category
+              a.gallery-cards__category-item.active(data-category='subject:Architecture', href='#')
+                | Architecture
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Art & Fashion', href='#')
+                | Art & Fashion
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Biography', href='#')
+                | Biography
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Business', href='#')
+                | Business
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Crafts & Hobbies', href='#')
+                | Crafts & Hobbies
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Drama', href='#')
+                | Drama
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Fiction', href='#')
+                | Fiction
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Food & Drink', href='#')
+                | Food & Drink
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Health & Wellbeing', href='#')
+                | Health & Wellbeing
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:History & Politics', href='#')
+                | History & Politics
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Humor', href='#')
+                | Humor
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Poetry', href='#')
+                | Poetry
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Psychology', href='#')
+                | Psychology
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Science', href='#')
+                | Science
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Technology', href='#')
+                | Technology
+            li.gallery-cards__category
+              a.gallery-cards__category-item(data-category='subject:Travel & Maps', href='#')
+                | Travel & Maps
+        .gallery-cards__wrapper
+          .gallery-cards__books
+          button#load-more.load-more
+            | LOAD MORE
+    footer
+    script(type='module', src='output/main.js')
